@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelTracker</title>
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>" />
+  </head>
   <body>
     <div class="container">
       <header class="app-header">
@@ -29,7 +34,73 @@
               type="text"
               id="from"
               required
-              placeholder="Enter source location" />
+              placeholder="Enter source location"
+              list="sourceLocations" />
+            <datalist id="sourceLocations">
+              <option value="DURGAPUR HYPER (713216)"></option>
+              <option value="BIDHANNAGAR (713212)"></option>
+              <option value="PURULIYA SUPER (723101)"></option>
+              <option value="DGP BENACHITY SUPER (713213)"></option>
+              <option value="MANI SQUARE (700054)"></option>
+              <option value="F & M DC (700009)"></option>
+              <option value="RO - EAST (700054)"></option>
+              <option value="SILIGURI HYPER (734010)"></option>
+              <option value="VEGA MALL SUPER (734001)"></option>
+              <option value="NTS HYPER (700136)"></option>
+              <option value="BARRACKPORE SUPER (700120)"></option>
+              <option value="PURTI AQUA DAILY (700156)"></option>
+              <option value="SIDDHA DAILY (700136)"></option>
+              <option value="CTH HYPER (700056)"></option>
+              <option value="SINTHEE MORE (700050)"></option>
+              <option value="KONNAGAR DAILY (712235)"></option>
+              <option value="SOUTH CITY HYPER (700068)"></option>
+              <option value="PATULI (700094)"></option>
+              <option value="TOLLY HEIGHTS (700047)"></option>
+              <option value="GARIA STATION RD (700084)"></option>
+              <option value="MAHAMAYATALA (700084)"></option>
+              <option value="KOL MUKUNDAPUR DAILY (700099)"></option>
+              <option value="RYNAGAR DAILY (700070)"></option>
+              <option value="AZADGARH DAILY (700040)"></option>
+              <option value="MAHESTALA SUPER (700141)"></option>
+              <option value="KOL Manton M"></option>
+              <option value="HALDIA SUPER (721607)"></option>
+              <option value="SPRING DALE (700040)"></option>
+              <option value="AVISHAR (700078)"></option>
+              <option value="NEW F & V DC (700053)"></option>
+              <option value="QUEST HYPER (700017)"></option>
+              <option value="ACROPOLIS SUPER (700107)"></option>
+              <option value="GARIAHAT SUPER (700019)"></option>
+              <option value="UPOHAR SUPER (700094)"></option>
+              <option value="MADHYAMGRAM HYPER (700129)"></option>
+              <option value="MADHYAMGRAM DAILY (700130)"></option>
+              <option value="LAKE TOWN SUPER (700048)"></option>
+              <option value="LAKE TOWN DAILY (700089)"></option>
+              <option value="BARASAT SUPER (700124)"></option>
+              <option value="DHULAGARH DC (711301)"></option>
+              <option value="DCRC (711303)"></option>
+              <option value="APPRAL DC"></option>
+              <option value="MEENA ICON HYPER (700114)"></option>
+              <option value="SODEPUR DAILY (700114)"></option>
+              <option value="KHARAGPUR SUPER (721301)"></option>
+              <option value="BELUR HYPER (711202)"></option>
+              <option value="RD MALL HYPER (711204)"></option>
+              <option value="RAMRAJATALA DAILY (711104)"></option>
+              <option value="AUROBINDO MALL DAILY (711106)"></option>
+              <option value="ASANSOL HYPER (713303)"></option>
+              <option value="DHANBAD HYPER (826001)"></option>
+              <option value="WEST APCAR GARDEN, ASANSOL (713304)"></option>
+              <option value="AXIS MALL HYPER"></option>
+              <option value="VAISAAKKHI DAILY (700091)"></option>
+              <option value="DLF NTH PLAZA SUPER (700156)"></option>
+              <option value="DOWNTOWN SUPER (700156)"></option>
+              <option value="NB CCU--PARK STREET (700016)"></option>
+              <option value="NB CCU--Forum Mall (700020)"></option>
+              <option value="KOL Park Street Daily (700016)"></option>
+              <option value="RASHBEHARI (700029)"></option>
+              <option value="TOLLY CLUB (700033)"></option>
+              <option value="ALIPORE DAILY (700027)"></option>
+              <option value="others"></option>
+            </datalist>
           </div>
 
           <div class="form-group">
@@ -38,7 +109,77 @@
               type="text"
               id="to"
               required
-              placeholder="Enter destination" />
+              placeholder="Enter destination"
+              list="destinationLocations" />
+            <datalist id="destinationLocations">
+              <!-- You can add the same list of locations for the "To" input as needed -->
+
+              <datalist id="sourceLocations">
+                <option value="DURGAPUR HYPER (713216)"></option>
+                <option value="BIDHANNAGAR (713212)"></option>
+                <option value="PURULIYA SUPER (723101)"></option>
+                <option value="DGP BENACHITY SUPER (713213)"></option>
+                <option value="MANI SQUARE (700054)"></option>
+                <option value="F & M DC (700009)"></option>
+                <option value="RO - EAST (700054)"></option>
+                <option value="SILIGURI HYPER (734010)"></option>
+                <option value="VEGA MALL SUPER (734001)"></option>
+                <option value="NTS HYPER (700136)"></option>
+                <option value="BARRACKPORE SUPER (700120)"></option>
+                <option value="PURTI AQUA DAILY (700156)"></option>
+                <option value="SIDDHA DAILY (700136)"></option>
+                <option value="CTH HYPER (700056)"></option>
+                <option value="SINTHEE MORE (700050)"></option>
+                <option value="KONNAGAR DAILY (712235)"></option>
+                <option value="SOUTH CITY HYPER (700068)"></option>
+                <option value="PATULI (700094)"></option>
+                <option value="TOLLY HEIGHTS (700047)"></option>
+                <option value="GARIA STATION RD (700084)"></option>
+                <option value="MAHAMAYATALA (700084)"></option>
+                <option value="KOL MUKUNDAPUR DAILY (700099)"></option>
+                <option value="RYNAGAR DAILY (700070)"></option>
+                <option value="AZADGARH DAILY (700040)"></option>
+                <option value="MAHESTALA SUPER (700141)"></option>
+                <option value="KOL Manton M"></option>
+                <option value="HALDIA SUPER (721607)"></option>
+                <option value="SPRING DALE (700040)"></option>
+                <option value="AVISHAR (700078)"></option>
+                <option value="NEW F & V DC (700053)"></option>
+                <option value="QUEST HYPER (700017)"></option>
+                <option value="ACROPOLIS SUPER (700107)"></option>
+                <option value="GARIAHAT SUPER (700019)"></option>
+                <option value="UPOHAR SUPER (700094)"></option>
+                <option value="MADHYAMGRAM HYPER (700129)"></option>
+                <option value="MADHYAMGRAM DAILY (700130)"></option>
+                <option value="LAKE TOWN SUPER (700048)"></option>
+                <option value="LAKE TOWN DAILY (700089)"></option>
+                <option value="BARASAT SUPER (700124)"></option>
+                <option value="DHULAGARH DC (711301)"></option>
+                <option value="DCRC (711303)"></option>
+                <option value="APPRAL DC"></option>
+                <option value="MEENA ICON HYPER (700114)"></option>
+                <option value="SODEPUR DAILY (700114)"></option>
+                <option value="KHARAGPUR SUPER (721301)"></option>
+                <option value="BELUR HYPER (711202)"></option>
+                <option value="RD MALL HYPER (711204)"></option>
+                <option value="RAMRAJATALA DAILY (711104)"></option>
+                <option value="AUROBINDO MALL DAILY (711106)"></option>
+                <option value="ASANSOL HYPER (713303)"></option>
+                <option value="DHANBAD HYPER (826001)"></option>
+                <option value="WEST APCAR GARDEN, ASANSOL (713304)"></option>
+                <option value="AXIS MALL HYPER"></option>
+                <option value="VAISAAKKHI DAILY (700091)"></option>
+                <option value="DLF NTH PLAZA SUPER (700156)"></option>
+                <option value="DOWNTOWN SUPER (700156)"></option>
+                <option value="NB CCU--PARK STREET (700016)"></option>
+                <option value="NB CCU--Forum Mall (700020)"></option>
+                <option value="KOL Park Street Daily (700016)"></option>
+                <option value="RASHBEHARI (700029)"></option>
+                <option value="TOLLY CLUB (700033)"></option>
+                <option value="ALIPORE DAILY (700027)"></option>
+                <option value="others"></option>
+              </datalist>
+            </datalist>
           </div>
 
           <div class="form-group">
