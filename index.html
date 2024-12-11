@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelTracker</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="app-header">
+        <div class="header-content">
+          <h1>✈️ Travel Tracker</h1>
+        </div>
+      </header>
+
+      <form id="expenseForm" class="expense-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="date">📅 Date</label>
+            <input type="date" id="date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="from">🚩 From</label>
+            <input
+              type="text"
+              id="from"
+              required
+              placeholder="Enter source location" />
+          </div>
+
+          <div class="form-group">
+            <label for="to">📍 To</label>
+            <input
+              type="text"
+              id="to"
+              required
+              placeholder="Enter destination" />
+          </div>
+
+          <div class="form-group">
+            <label for="transportMode">🚗 Transportation Mode</label>
+            <select id="transportMode" required>
+              <option value="">Select mode</option>
+              <option value="BIKE">🏍️ BIKE</option>
+              <option value="TAXI">🚕 TAXI</option>
+              <option value="AUTO">🛺 AUTO</option>
+              <option value="CAB">🚗 CAB - BILL REQUIRED</option>
+              <option value="BUS">🚌 BUS - TICKET/PASS REQUIRED</option>
+              <option value="TRAIN">🚂 TRAIN - TICKET/PASS REQUIRED</option>
+              <option value="OTHER">🚇 PUBLIC TRANSPORT (OTHERS)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="amount">💰 Amount (₹)</label>
+            <input
+              type="number"
+              id="amount"
+              required
+              min="0"
+              step="0.01"
+              placeholder="Enter amount" />
+          </div>
+
+          <div class="form-group">
+            <label for="kms">📏 Distance (km)</label>
+            <input
+              type="number"
+              id="kms"
+              required
+              min="0"
+              step="0.1"
+              placeholder="Enter distance" />
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="note">📝 Note (Optional)</label>
+          <textarea
+            id="note"
+            rows="2"
+            placeholder="Add any additional notes here"></textarea>
+        </div>
+
+        <button type="submit" class="btn submit-btn">Add Expense</button>
+      </form>
+
+      <section class="expense-section">
+        <h2>💼 Expense Report</h2>
+        <div id="expenseContainer" class="expense-container"></div>
+      </section>
+
+      <div class="import-export">
+        <button id="importBtn" class="btn">📥 Import CSV</button>
+        <button id="exportBtn" class="btn">📤 Export CSV</button>
+        <input type="file" id="fileInput" accept=".csv" style="display: none" />
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
